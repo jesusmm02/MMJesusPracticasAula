@@ -1,0 +1,60 @@
+body{
+    background-color: goldenrod;
+}
+
+#titulo{
+    color: white;
+}
+
+#divUno{
+    background-color: lightcyan;
+    border: 2px;
+}
+#datosPersonales{
+    font-style: italic;
+    font-family: verdana;
+}
+#usuario{
+    color: darkslategrey;
+}
+#password{
+    color: darkslategrey;
+}
+#edad{
+    color: darkslategrey;
+}
+
+
+#divDos{
+    background-color: lightcyan;
+    border: 2px;
+}
+#otrosDatos{
+    font-style: italic;
+    font-family: verdana;
+}
+#estadoCivil{
+    color: darkslategrey;
+}
+#aficiones{
+    color: darkslategrey;
+}
+#comentarios{
+    color: darkslategrey;
+}
+
+
+#divTres{
+    background-color: lightcyan;
+    border: 2px;
+}
+#mediosTecnologicos{
+    font-style: italic;
+    font-family: verdana;
+}
+#internet{
+    color: darkslategrey;
+}
+#SO{
+    color: darkslategrey;
+}

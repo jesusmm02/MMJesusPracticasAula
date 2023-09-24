@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Jesús
  */
-@WebServlet(name = "Formulario", urlPatterns = {"/Formulario"})
-public class Formulario extends HttpServlet {
+@WebServlet(name = "FormularioComplejo", urlPatterns = {"/FormularioComplejo"})
+public class FormularioComplejo extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -78,8 +78,8 @@ public class Formulario extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Formulario</title>");
-            out.println("<link rel='stylesheet' href='CSS/ServletFormulario.css' type='text/css'>");
+            out.println("<title>Servlet Formulario complejo</title>");
+            out.println("<link rel='stylesheet' href='CSS/ServletFormularioComplejo.css' type='text/css'>");
             out.println("</head>");
             out.println("<body>");
             out.println("<h2>Datos introducidos en el formulario</h2>");
@@ -92,11 +92,9 @@ public class Formulario extends HttpServlet {
                 if(!nombre.startsWith("btn")){
                 out.println("<li>" + nombre + " : " +
                         request.getParameter(nombre) + "</li>" );
+                }
             }
-                
-                array=request.getParameterValues("Gustos");
-            }
-            out.println("<p><a href=\".\">Menu</a></p>");
+            out.println("<p><a href=\".\">Menu principal</a></p>");
             out.println("</body>");
             out.println("</html>");
         }

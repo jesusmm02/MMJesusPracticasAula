@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Formulario complejo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/FormularioComplejo.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 id="titulo">FORMULARIO COMPLEJO</h1>
+        <form method="post" action="../FormularioComplejo">
+            
+            <div id="divUno">
+            <h4 id="datosPersonales">Datos personales</h4>
+            <div id="usuario">
+                <label for="usu">Usuario: </label>
+                <input type="text" id="usu" name="Usuario">
+            </div>
+            <div id="password">
+                <label for="passwd">Password: </label>
+                <input type="text" id="passwd" name="Password">
+            </div>
+            <div id="edad">
+                <label>Edad: </label>
+                <select name="Edad">
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                </select>
+            </div>
+            </div>
+            
+            <div id="divDos">
+            <h4 id="otrosDatos">Otros datos</h4>
+            <div id="estadoCivil">
+                <label>Estado civil </label>
+                <input type="radio" name="Estado" value="Soltero/a" checked>Soltero/a
+                <input type="radio" name="Estado" value="Casado/a">Casado/a
+                <input type="radio" name="Estado" value="Viudo/a">Viudo/a
+                <input type="radio" name="Estado" value="Divorciado/a">Divorciado/a
+            </div>
+            <div id="aficiones">
+                <label for="afic">Aficiones(una o varias)</label><br>
+                <select id="afic" name="Aficiones" size="6" multiple>
+                <option>Deporte</option>
+                <option>M&uacute;sica</option>
+                <option>Inform&aacute;tica</option>
+                <option>Viajes</option>
+                <option>Tiendas</option>
+                <option selected>Juegos</option>
+                </select>
+            </div>
+            <div>
+                <label id="comentarios">Comentarios: </label>
+                <textarea name="Comentarios" placeholder="Pon tu comentario..."></textarea>
+            </div>
+            </div>
+            
+            <div id="divTres">
+            <h4 id="mediosTecnologicos">Medios Tecnol&oacute;gicos</h4>
+            <div id="internet">
+                <label>Dispones de internet?: </label>
+                <input type="radio" name="Disponibilidad a Internet" value="Si" checked>S&iacute;
+                <input type="radio" name="Disponibilidad a Internet" value="No">No
+            </div>
+            <div id="SO">
+                <label>Sistema operativo (elige uno)</label>
+                <select id="afic2" name="SO" size="4">
+                <option>Linux</option>
+                <option selected>Windows</option>
+                <option>Macintosh</option>
+                <option>Solaris</option>
+                </select>
+            </div>
+            </div>
+            
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </body>
+</html>
