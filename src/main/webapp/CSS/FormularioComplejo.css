@@ -1,13 +1,13 @@
 body{
-    background-color: goldenrod;
+    background-color: palegoldenrod;
 }
 
 #titulo{
-    color: white;
+    color: SaddleBrown;
 }
 
 #divUno{
-    background-color: lightcyan;
+    background-color: Peru;
     border: 2px;
 }
 #datosPersonales{
@@ -15,18 +15,18 @@ body{
     font-family: verdana;
 }
 #usuario{
-    color: darkslategrey;
+    color: white;
 }
 #password{
-    color: darkslategrey;
+    color: white;
 }
 #edad{
-    color: darkslategrey;
+    color: white;
 }
 
 
 #divDos{
-    background-color: lightcyan;
+    background-color: Peru;
     border: 2px;
 }
 #otrosDatos{
@@ -34,18 +34,18 @@ body{
     font-family: verdana;
 }
 #estadoCivil{
-    color: darkslategrey;
+    color: white;
 }
 #aficiones{
-    color: darkslategrey;
+    color: white;
 }
 #comentarios{
-    color: darkslategrey;
+    color: white;
 }
 
 
 #divTres{
-    background-color: lightcyan;
+    background-color: peru;
     border: 2px;
 }
 #mediosTecnologicos{
@@ -53,8 +53,8 @@ body{
     font-family: verdana;
 }
 #internet{
-    color: darkslategrey;
+    color: white;
 }
 #SO{
-    color: darkslategrey;
+    color: white;
 }

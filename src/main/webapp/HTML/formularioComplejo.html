@@ -8,14 +8,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>Formulario complejo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="CSS/FormularioComplejo.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../CSS/FormularioComplejo.css">
     </head>
     <body>
         <h1 id="titulo">FORMULARIO COMPLEJO</h1>
         <form method="post" action="../FormularioComplejo">
             
+            <fieldset>
+            <legend id="datosPersonales">Datos personales</legend>
             <div id="divUno">
-            <h4 id="datosPersonales">Datos personales</h4>
             <div id="usuario">
                 <label for="usu">Usuario: </label>
                 <input type="text" id="usu" name="Usuario">
@@ -43,9 +44,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 </select>
             </div>
             </div>
+            </fieldset>
             
+            <fieldset>
+            <legend id="otrosDatos">Otros datos</legend>
             <div id="divDos">
-            <h4 id="otrosDatos">Otros datos</h4>
             <div id="estadoCivil">
                 <label>Estado civil </label>
                 <input type="radio" name="Estado" value="Soltero/a" checked>Soltero/a
@@ -69,9 +72,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <textarea name="Comentarios" placeholder="Pon tu comentario..."></textarea>
             </div>
             </div>
+            </fieldset>
             
+            <fieldset>
+            <legend id="mediosTecnologicos">Medios Tecnol&oacute;gicos</legend>
             <div id="divTres">
-            <h4 id="mediosTecnologicos">Medios Tecnol&oacute;gicos</h4>
             <div id="internet">
                 <label>Dispones de internet?: </label>
                 <input type="radio" name="Disponibilidad a Internet" value="Si" checked>S&iacute;
@@ -87,6 +92,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 </select>
             </div>
             </div>
+            </fieldset>
+            
+            <input type="hidden" value="23" name="Digito">
             
             <input type="submit">
             <input type="reset">

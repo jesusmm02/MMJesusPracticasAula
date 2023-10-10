@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../CSS/cookies.css"> 
+    <title>Cookies</title>
+</head>
+<body>
+    <form method="post" action="../JSP/cookies.jsp">
+    <p>Informaci&oacute;n sobre la cookie:</p>
+    <ul>
+        <li>Veces que has visitado la p&aacute;gina: <span id="visitas">0</span></li>
+        <li>Caducidad: <span id="caducidad"></span></li>
+        <li>Nombre: <span id="nombre"></span></li>
+        <li>Segura: <span id="segura"></span></li>
+        <li>Versi&oacute;n: <span id="version"></span></li>
+    </ul>
+    <button id="recargar">Recargar P&aacute;gina</button>
+    <script>
+        // Función para obtener el valor de una cookie por su nombre
+        function getCookieValue(name) {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i].trim();
+                if (cookie.startsWith(name + '=')) {
+                    return cookie.substring(name.length + 1);
+                }
+            }
+            return null;
+        }
+
+        // Función para mostrar la información de la cookie
+        function mostrarInfoCookie() {
+            var cookieCaducidad = getCookieValue('caducidad');
+            var cookieNombre = getCookieValue('nombre');
+            var cookieSegura = getCookieValue('segura');
+            var cookieVersion = getCookieValue('version');
+
+            document.getElementById('caducidad').textContent = cookieCaducidad;
+            document.getElementById('nombre').textContent = cookieNombre;
+            document.getElementById('segura').textContent = cookieSegura;
+            document.getElementById('version').textContent = cookieVersion;
+        }
+        
+        function contarVisitas() {
+            var visitas = localStorage.getItem('visitas') || 0;
+            visitas = parseInt(visitas) + 1;
+            localStorage.setItem('visitas', visitas);
+            document.getElementById('visitas').textContent = visitas;
+    }
+    
+    contarVisitas();
+    
+    document.getElementById('recargar').addEventListener('click', function () {
+    <a href="cookies.html">location.reload();</a>
+    });
+ 
+    </script>
+    </form>
+</body>
+</html>

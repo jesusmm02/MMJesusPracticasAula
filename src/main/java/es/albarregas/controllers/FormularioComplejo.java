@@ -7,6 +7,7 @@ package es.albarregas.controllers;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
+import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -58,7 +59,19 @@ public class FormularioComplejo extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        try (PrintWriter out = response.getWriter()) { 
+             /* TODO output your page here. You may use following sample code. */ 
+             out.println("<!DOCTYPE html>"); 
+             out.println("<html>"); 
+             out.println("<head>"); 
+             out.println("<title>Servlet Formulario Complejo</title>"); 
+             out.println("</head>"); 
+             out.println("<body>"); 
+             out.println("<h3>Tienes que ir al registro primero <a href=\"" + request.getContextPath() + "</h3>"); 
+             out.println("</body>"); 
+             out.println("</html>"); 
+         }
+        //processRequest(request, response);
     }
 
     /**
@@ -92,7 +105,7 @@ public class FormularioComplejo extends HttpServlet {
                 if(!nombre.startsWith("btn")){
                 out.println("<li>" + nombre + " : " +
                         request.getParameter(nombre) + "</li>" );
-                }
+            }
             }
             out.println("<p><a href=\".\">Menu principal</a></p>");
             out.println("</body>");

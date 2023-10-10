@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Saludos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../CSS/saludo.css">
+    </head>
+    <body>
+        <form method="post" action="../JSP/saludos.jsp">
+            <input type="hidden" name="switch" value="true">
+        <div id="nombre">
+            <label for="nom">Nombre: </label>
+            <input type="text" id="nom" name="Nombre">
+        </div>
+        <div id="sexo">
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="Sexo:" value="Hombre" checked>Hombre
+            <input type="radio" name="Sexo:" value="Mujer">Mujer
+        </div>
+        
+        <input type="submit">
+    
+        </form>
+    </body>
+</html>
