@@ -3,8 +3,10 @@
     <head>
         <title>Bienvenido</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/index.css">
     </head>
     <body>
+        <fieldset>
         <h1>Llamadas a Servlet</h1>
         <p><a href="Bienvenido">Llamada por GET</a></p>
         <p><a href="Bienvenido?param1=hola&param2=mundo">Llamada por GET con par&aacute;metros</a></p>
@@ -18,22 +20,26 @@
             <input type="submit" name="btnEnviar" value="Servidor">
             <input type="reset" name="btnLimpiar" value="Limpiar">
         </form>
-        <table id="Servlet">
-            <title>Servlets</title>
-            <tr>
-                <th><p><a href="HTML/formulario.html">Formulario</a></p></th>
-                <th><p><a href="HTML/formularioComplejo.html">Formulario complejo</a></p></th>
-                <th><p><a href="HTML/registro.html">Registro</a></p></th>
-                <th><p><a href="HTML/registroConPantallas.html">Registro con pantallas</a></p></th>
-                <th><p><a href="HTML/cookies.html">Cookies</a></p></th>
-            </tr>
-        </table>
-        <table id="JSP">
-            <title>JavaSer Pages (JSP)</title>
-            <tr>
-                <th><p><a href="HTML/saludo.html">JSP saludos</a></p></th>
-                <th><p><a href="HTML/cumpleanios.hmtl">Cumpleaños</a></p></th>
-            </tr>
-        </table>
+        <div class="container">
+            <div id="Servlet">
+                <h2>Servlets</h2>
+                <ul>
+                    <li><a href="HTML/formulario.html">Formulario</a></li>
+                    <li><a href="HTML/formularioComplejo.html">Formulario complejo</a></li>
+                    <li><a href="HTML/registro.html">Registro</a></li>
+                    <li><a href="HTML/registroConPantallas.html">Registro con pantallas</a></li>
+                    <li><a href="HTML/cookies.html">Cookies</a></li>
+                    <li><a href="HTML/inicioSesion.html">Contador de visitas</a></li>
+                </ul>
+            </div>
+            <div id="JSP">
+                <h2>JavaSer Pages (JSP)</h2>
+                <ul>
+                    <li><a href="HTML/saludo.html">JSP saludos</a></li>
+                    <li><a href="HTML/cumpleanios.hmtl">Cumpleaños</a></li>
+                </ul>
+            </div>
+        </div>
+        </fieldset>
         </body>
 </html>
